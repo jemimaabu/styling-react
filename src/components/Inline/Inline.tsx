@@ -20,9 +20,19 @@ export const Inline: React.FC<InlineProps> = ({ bgColor = "white" }) => {
     backgroundColor: bgColor,
   };
 
+  const styles = {
+    header: {
+      fontSize: "2em",
+    },
+    content: {
+      fontSize: "1em",
+    },
+  };
+
   return (
     <>
       <div style={paddingWithBorder}>
+        <h1 style={styles.header}>This is a header</h1>
         <p className="app-content" style={{ color: "red", fontSize: 20 }}>
           This is an inline style
         </p>

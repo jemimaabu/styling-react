@@ -7,12 +7,17 @@
     "@types/node": "^14.0.5",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "tailwindcss": "^1.4.6",
     "typescript": "^3.9.3"
   },
   "scripts": {
+    "build:tailwind": "tailwindcss build src/tailwind.css -o src/components/Tailwind/tailwind.css",
+    "prestart": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
