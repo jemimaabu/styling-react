@@ -1,5 +1,5 @@
 import React from "react";
-import { Inline, Stylesheet, Sass, Tailwind } from "./components";
+import { Inline, Stylesheet, Sass, Tailwind, Styled } from "./components";
 import "./App.css";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Stylesheet />
       <Sass />
       <Tailwind />
+      <Styled />
     </div>
   );
 }
